@@ -10,11 +10,33 @@ body {
   align-items: center;
 }
 
+
+.calculator-body {
+  color: #fff;
+  margin: 0;
+  padding:0;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  right: 70px;
+  z-index: 1000;
+  display: none;
+}
+
+#clear {
+  background-color: #f56060;
+  color: #fff;
+}
+
+#backspace {
+  color: #f56060;
+}
+
 .calculator {
   background: #1c2b39;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 0 15px #00ffff33;
+  box-shadow: 0 0 15px black;
   max-width: 370px;
   width: 100%;
 }

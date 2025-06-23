@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,11 +16,8 @@ body {
   margin: 0;
   padding:0;
   align-items: center;
-  position: fixed;
   top: 50px;
   right: 70px;
-  z-index: 1000;
-  display: none;
 }
 
 #clear {

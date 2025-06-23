@@ -7,68 +7,63 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" value="0" readonly>
-
-    <div class="buttons">
-      <!-- Row 1 -->
-
-      <button id="clear" onclick="clearDisplay()">AC</button>
- 
-      <button onclick="backspace()">DEL</button>
+ <div class="calculator-body" id="cal">
+        <div class="calculator">
+          <input type="text" id="display" value="0" readonly>
       
-        <!--<button onclick="appendOperator('(')">(</button>
-        <button onclick="appendOperator(')')">)</button> -->
-        <button onclick="calculateSin()">sin</button>
-        <button onclick="calculateCos()">cos</button>
-        <button onclick="calculateTan()">tan</button>
-        <button onclick="calculateLn()">ln</button>
-        <button onclick="calculateLog()">log</button>
-        <button onclick="calculateSinh()">sinh</button>
-        <button onclick="calculateCosh()">cosh</button>
-        <button onclick="calculateTanh()">tanh</button>
+          <div class="buttons">
+            <button id="clear" onclick="clearDisplay()">AC</button>
+            <button id="backspace" onclick="backspace()">DEL</button>
+            
+              <!--<button onclick="appendOperator('(')">(</button>
+              <button onclick="appendOperator(')')">)</button> -->
+              <button onclick="calculateSin()">sin</button>
+              <button onclick="calculateCos()">cos</button>
+              <button onclick="calculateTan()">tan</button>
+              <button onclick="calculateLn()">ln</button>
+              <button onclick="calculateLog()">log</button>
+              <button onclick="calculateSinh()">sinh</button>
+              <button onclick="calculateCosh()">cosh</button>
+              <button onclick="calculateTanh()">tanh</button>
+      
+              <button onclick="calculateArcsin()">sin⁻¹</button>
+              <button onclick="calculateArccos()">cos⁻¹</button>
+              <button onclick="calculateArctan()">tan⁻¹</button>
+              <button onclick="calculateTenPower()">10ˣ</button>
+              <button onclick="calculateAbs()">|x|</button>
+              <button onclick="calculateFactorial()">x!</button>
+              <button onclick="calculateReciprocal()">1/x</button>
+              <button onclick="calculateSqrt()">√</button>
+              <button onclick="calculateInverseSqrt()">1/√x</button>
+          <!-- <button onclick="calculateSquare()">x²</button>
+              <button onclick="appendOperator('π')">π</button> -->
+            </div>
 
+            <div class="numbers">   
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendNumber('0')">0</button>
+            </div>
 
-      <!-- Row 2 (Inverse Functions) -->
-
-        <button onclick="calculateArcsin()">sin⁻¹</button>
-        <button onclick="calculateArccos()">cos⁻¹</button>
-        <button onclick="calculateArctan()">tan⁻¹</button>
-        <button onclick="calculateTenPower()">10ˣ</button>
-        <button onclick="calculateAbs()">|x|</button>
-        <button onclick="calculateFactorial()">x!</button>
-        <button onclick="calculateReciprocal()">1/x</button>
-        <button onclick="calculateSqrt()">√</button>
-        <button onclick="calculateInverseSqrt()">1/√x</button>
-       <!-- <button onclick="calculateSquare()">x²</button>
-        <button onclick="appendOperator('π')">π</button> -->
+            <div class="operators">
+            <button onclick="appendOperator('-')">−</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculatePercent()">%</button>
+            <button onclick="appendOperator('/')">÷</button>
+            <button onclick="appendOperator('*')">×</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button id="equal" onclick="calculateResult()">=</button>
+            </div>  
+          </div>
+        </div>
       </div>
-      <!-- Row 3 -->
-      <div class="numbers">   
-      <button onclick="appendNumber('1')">1</button>
-      <button onclick="appendNumber('2')">2</button>
-      <button onclick="appendNumber('3')">3</button>
-      <button onclick="appendNumber('4')">4</button>
-      <button onclick="appendNumber('5')">5</button>
-      <button onclick="appendNumber('6')">6</button>
-      <button onclick="appendNumber('7')">7</button>
-      <button onclick="appendNumber('8')">8</button>
-      <button onclick="appendNumber('9')">9</button>
-      <button onclick="appendNumber('0')">0</button>
-
-      </div>
-      <!-- Row 4 -->
-      <div class="operators">
-      <button onclick="appendOperator('-')">−</button>
-      <button onclick="appendNumber('.')">.</button>
-      <button onclick="calculatePercent()">%</button>
-      <button onclick="appendOperator('/')">÷</button>
-      <button onclick="appendOperator('*')">×</button>
-      <button onclick="appendOperator('+')">+</button>
-      <button id="equal" onclick="calculateResult()">=</button>
-      </div>  
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
